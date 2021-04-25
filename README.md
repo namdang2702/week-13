@@ -22,5 +22,6 @@ https://careerkarma.com/blog/css-hover/
 6. Add two more "non-hover" @keyframes styling events to the starter code. 
     a. One should be "infinite"
     b. One should have animation-iteration-count: 1;
-
-6. Pass in your saved github repository link. 
+    
+7. Pass in your saved github repository link. 
+8. Pass in a Document (Google, pdf) with a list of the seven things you added to the webpage. 
