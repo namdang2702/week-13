@@ -49,20 +49,50 @@ html, body {
     font-size:34px;
     font-weight:bold;
     font-family:Arial, Helvetica, sans-serif;
+    animation-name: head;
+    animation-iteration-count: 1;
+    animation-duration: 8s;
+    transition: ease;
+    animation-direction: alternate-reverse;
+    }
+    @keyframes head {
+      0% {
+        transform: skew(45deg); 
+        color: steelblue;
+      }
+      50% {
+        transform: translate(10em,0);
+        color: seagreen;
+      }
+      75% {
+        color: rgb(37, 135, 201);
+      }
+      100% {
+        transform: skew(-75deg);
+      }
     }
     
     #headerSubText
     {
     position:relative;
     left:33px;
-    top:30px;
+    top:33px;
     color:#679159;
     text-align:left;
     font-size:16px;
     font-weight:bold;
     font-family:Arial, Helvetica, sans-serif;
     }
-    
+    #headerSubText:hover {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      left: 95px;
+      transition: 1.2s ease-out;
+      color: rgb(235, 74, 16);
+      transform: scale(1.2);
+    }
     
     #bar
     {
@@ -74,21 +104,34 @@ html, body {
     padding-left:20px;
     padding-right:20px;
     }
+
+    #bar:hover {
+      -webkit-transform: translateY(10px);
+      -moz-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+      -o-transform: translateY(10px);
+      transform: translateY(10px);
+      transition: 0.8s linear;
+    }
     
     #bar a
     {
-    font-size:13px;
+    font-size:15px;
     font-weight:bold;
     color:#FBFDFB;
-    margin-left:28px;
-    margin-right:28px;
+    margin-left:20px;
+    margin-right:20px;
+    padding: 5px;
+    text-decoration: none;
     }
     
-    #bar a:hover
-    {
-    color:#C7E0C2;
+    #bar a:hover {
+      border-radius: 8px;
+      background: linear-gradient(to left, rgb(202, 90, 77) 50%, rgb(72, 147, 172) 50%) right;
+      background-size: 200%;
+      transition: 0.8s ease-in;
+      color: rgb(250, 218, 148);
     }
-    
     
     
     .contentTitle
@@ -100,7 +143,6 @@ html, body {
     margin-right:25px;
     background-image:url(https://www.html.am/templates/downloads/bryantsmith/greencreative/tab_back.png);
     background-repeat:no-repeat;
-    
     }
     
     .contentTitle h1
@@ -110,6 +152,29 @@ html, body {
     font-size:17px;
     font-weight:bold;
     color:#071027;
+    animation-name: title;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    transform-origin: left;
+    }
+    @keyframes title {
+      0% {
+        transform: translateY(0);
+        color: crimson;
+      }
+      50% {
+        transform: translateY(-10px);
+        color: darkgreen;
+        transform: rotate(-3deg);
+      }
+      75% {
+        transform: translateY(-5px);
+        color: darksalmon;
+      }
+      100% {
+        transform: translateY(0);
+      }
     }
     
     .comments
@@ -120,23 +185,21 @@ html, body {
     
     .contentText
     {
-    width:680px;
+    width:630px;
     padding-left:30px;
     padding-right:30px;
     font-size:13px;
     color:#030712;
     line-height:30px;
     }
-    
-    a
-    {
-    text-decoration:none;
-    color:#152413;
-    }
-    
-    a:hover
-    {
-    color:#597A41;
+    .contentText:hover {
+      background: darkseagreen;
+      border-radius: 12px;
+      transition: ease-in-out 0.8s;
+      -webkit-transform: skew(5deg);
+      -moz-transform: skew(5deg);
+      -o-transform: skew(5deg);
+      transform: skew(5deg);
     }
     
     
